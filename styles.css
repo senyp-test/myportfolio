@@ -1,4 +1,10 @@
-h1{
+:root{
+--brand-color: #6C63FF;
+--button-padding: 18px 30px;
+}
+
+
+h1,h2,h3{
 font-family: 'Playfair Display', serif;
 }
 .containers{
@@ -8,10 +14,10 @@ h1{
 font-size:96px;
 }
 .btn-get-stated{
-background-color:#6C63FF;
+background-color:var(--brand-color);
 border-radius:4px
 font-size: 18px;
-padding:18px 30px;
+padding:var(--button-padding);
 }
 .para-color{
 color: #272142;
@@ -20,3 +26,37 @@ color: #272142;
 background-color:#F9F7FE;
 padding:200px 0px;
 }
+.content p {
+font-size:16px;
+color:#272142;
+opacity:0.7;
+line-height:30px;
+}
+ .btn-view-detail{
+ color:var(--brand-color);
+ border: 1px solid var(--brand-color);
+padding:var(--button-padding);
+ }
+ @media (max-width:767px) {
+     :root{
+        --button-padding: 8px 18px;
+    }
+    h1{
+    font-size:46px;
+    }
+    .content{
+        text-align:center;
+        padding-right: 10px !important;
+        padding-left: 10px !important;
+
+    }
+    .intro{
+        padding:70px 0px;
+
+    }
+    p{
+    padding: 0px;
+    }
+
+ }
+

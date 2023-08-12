@@ -1,6 +1,22 @@
 h1{
 font-family: 'Playfair Display', serif;
-color: red
 }
-
+.containers{
 font-family: 'Poppins', sans-serif;
+}
+h1{
+font-size:96px;
+}
+.btn-get-stated{
+background-color:#6C63FF;
+border-radius:4px
+font-size: 18px;
+padding:18px 30px;
+}
+.para-color{
+color: #272142;
+}
+.intro{
+background-color:#F9F7FE;
+padding:200px 0px;
+}

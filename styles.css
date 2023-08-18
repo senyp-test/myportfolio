@@ -27,6 +27,9 @@ h1 {
   background-color: var(--brand-color);
   opacity: 0.9;
 }
+.active {
+  color: var(--brand-color) !important;
+}
 
 .para-color {
   color: #272142;
@@ -72,6 +75,10 @@ h1 {
 .btn-view-detail:hover {
   color: white;
   background-color: var(--brand-color);
+}
+
+.navbar-collapse {
+  flex-grow: 0 !important;
 }
 
 .contact-box {

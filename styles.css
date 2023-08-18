@@ -1,13 +1,15 @@
 :root {
   --brand-color: #6c63ff;
   --button-padding: 18px 30px;
-  --default-font-family: "Poppins", sans-serif;
+  --default-paragraph-font-family: "Poppins", sans-serif;
+  --default-heading-font-family: "Playfair Display", serif;
 }
 
 h1,
 h2,
-h3 {
-  font-family: "Playfair Display", serif;
+h3,
+h4 {
+  font-family: var(--default-heading-font-family);
 }
 .containers {
   font-family: "Poppins", sans-serif;
@@ -72,6 +74,31 @@ h1 {
   background-color: var(--brand-color);
 }
 
+.contact-box {
+  background-color: #f9f7fe;
+  padding: 30px;
+}
+footer .email-link {
+  text-decoration: none;
+  color: black;
+  font-size: 24px;
+}
+
+footer .email-link:hover {
+  color: var(--brand-color);
+}
+
+footer .social-links a {
+  color: var(--brand-color);
+  background: #f9f7fe;
+  transition: all 100ms ease-in-out;
+}
+
+footer .social-links a:hover {
+  color: white;
+  background: var(--brand-color);
+}
+
 @media (max-width: 767px) {
   :root {
     --button-padding: 8px 18px;
@@ -89,5 +116,14 @@ h1 {
   }
   p {
     padding: 0px;
+  }
+  .contact-box {
+    width: 95% !important;
+    padding: 10px !important;
+    margin: 5px !important;
+  }
+  .contact-box .btn {
+    padding: var(--button-padding) !important;
+    font-size: 14px;
   }
 }
